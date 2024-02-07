@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeTeamBuilderNet", "PokeTeamBuilderNet\PokeTeamBuilderNet.csproj", "{91140641-78A7-4820-9323-A0BF9460D684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeTeamBuilderNet", "PokeTeamBuilderNet\PokeTeamBuilderNet.csproj", "{91140641-78A7-4820-9323-A0BF9460D684}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeApiNet", "..\..\..\..\Downloads\PokeApiNet-master\PokeApiNet-master\PokeApiNet\PokeApiNet.csproj", "{28F92DC1-E137-466B-9B8F-BED8A8EBB1F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{91140641-78A7-4820-9323-A0BF9460D684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91140641-78A7-4820-9323-A0BF9460D684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91140641-78A7-4820-9323-A0BF9460D684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F92DC1-E137-466B-9B8F-BED8A8EBB1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F92DC1-E137-466B-9B8F-BED8A8EBB1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F92DC1-E137-466B-9B8F-BED8A8EBB1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F92DC1-E137-466B-9B8F-BED8A8EBB1F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
