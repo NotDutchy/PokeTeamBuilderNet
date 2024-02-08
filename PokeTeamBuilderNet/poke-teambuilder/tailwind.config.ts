@@ -1,5 +1,37 @@
 import type { Config } from "tailwindcss";
 
+module.exports = {
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+        
+"primary": "#1c26ff",
+        
+"secondary": "#00e7e3",
+        
+"accent": "#0043ff",
+        
+"neutral": "#00070a",
+        
+"base-100": "#1f2937",
+        
+"info": "#00e8ff",
+        
+"success": "#75f035",
+        
+"warning": "#f4a300",
+        
+"error": "#ed0145",
+        },
+      },
+    ],
+  },
+  plugins: [
+    require('daisyui'),
+  ],
+}
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,6 +47,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
 };
 export default config;
