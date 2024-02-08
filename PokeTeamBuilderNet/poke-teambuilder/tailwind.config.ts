@@ -1,36 +1,5 @@
 import type { Config } from "tailwindcss";
-
-module.exports = {
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-        
-"primary": "#1c26ff",
-        
-"secondary": "#00e7e3",
-        
-"accent": "#0043ff",
-        
-"neutral": "#00070a",
-        
-"base-100": "#1f2937",
-        
-"info": "#00e8ff",
-        
-"success": "#75f035",
-        
-"warning": "#f4a300",
-        
-"error": "#ed0145",
-        },
-      },
-    ],
-  },
-  plugins: [
-    require('daisyui'),
-  ],
-}
+import daisyui from 'daisyui'
 
 const config: Config = {
   content: [
@@ -46,6 +15,24 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+  },
+  plugins: [daisyui],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+        "primary": "#1c26ff",
+        "secondary": "#00e7e3",
+        "accent": "#0043ff",
+        "neutral": "#00070a",
+        "base-100": "#1f2937",
+        "info": "#00e8ff",
+        "success": "#75f035",
+        "warning": "#f4a300",
+        "error": "#ed0145",
+        },
+      },
+    ],
   },
 };
 export default config;
