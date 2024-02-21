@@ -14,11 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Downloads\PokeApiNet-master\PokeApiNet-master\PokeApiNet\PokeApiNet.csproj" />
+    <Folder Include="GraphTypes\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="GraphTypes\" />
+    <ProjectReference Include="..\..\..\..\..\..\Downloads\PokeApiNet-master\PokeApiNet-master\PokeApiNet\PokeApiNet.csproj" />
   </ItemGroup>
 
 </Project>
