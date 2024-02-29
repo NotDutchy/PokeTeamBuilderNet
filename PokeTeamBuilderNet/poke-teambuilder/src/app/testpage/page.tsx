@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {ApolloClient, InMemoryCache, gql, useQuery } from "@apollo/client";
 import createApolloClient from "@/components/providers";
 import Image from "next/image";
@@ -19,24 +20,20 @@ query Pokemon {
   }
 }`
 
-export default async function Page() {
+export default async function Pokemon() {
   const client = createApolloClient();
-  const { data } = await client.query({
+  const { error, data } = await client.query({
     query: GET_POKEMON,
   });
-  console.log(data.pokemon.id);
-  console.log(data.pokemon.sprites.frontDefault);
 
-  const spriteUrl = data.pokemon.sprites.frontDefault;
+  if (error) return <h1>Something went wrong!</h1>;
 
   return (
     <div>
-      <Image 
+      <img 
       src={data.pokemon.sprites.frontDefault}
-      width={500}
-      height={500}
       alt="Pokemon picture">
-      </Image>
+      </img>
       <h1 className="font-bold underline">{data.pokemon.id}</h1>
     </div>
   );
